@@ -21,7 +21,7 @@ Prefer using the provided installation script:
 ./install.sh
 ```
 
-If prefer to do it manually:
+If you prefer to do it manually:
 ```sh
 dest=$HOME/.local/share/typst/packages/$(grep 'name' typst.toml | cut -d'"' -f2)/$(grep 'version' typst.toml | cut -d'"' -f2)
 mkdir -p $dest
