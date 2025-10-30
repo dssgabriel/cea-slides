@@ -155,6 +155,8 @@
   self => {
     if title == auto {
       self.store.title = "Contents"
+    } else {
+      self.store.title = title
     }
 
     let outline = {
