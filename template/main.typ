@@ -1,9 +1,8 @@
 #import "@preview/touying:0.6.1": *
-#import "@local/cea-slides:0.1.0": *
+#import "@local/cea-slides:0.2.0": *
 
 #show: cea-theme.with(
   config-info(
-    lang: "en",
     // First author is considered the main author/point of contact.
     // Affiliations are automatically annotated accordingly.
     authors: (
