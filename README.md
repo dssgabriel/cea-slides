@@ -32,12 +32,12 @@ cp -r src/ assets/ template/ typst.toml LICENSE README.md $dest
 
 Once installed, the package can be imported into your project using the following statement:
 ```typ
-#import "@local/cea-slides:0.1.0": *
+#import "@local/cea-slides:0.2.0": *
 ```
 
 Alternatively, you can directly start a new project using the provided template:
 ```sh
-typst init @local/cea-slides:0.1.0 <PROJECT_PATH>
+typst init @local/cea-slides:0.2.0 <PROJECT_PATH>
 ```
 
 For more information on local package installation, please refer to the [dedicated Typst documentation][typst-pkg-doc].
