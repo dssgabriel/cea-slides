@@ -1,6 +1,6 @@
 [package]
 name = "cea-slides"
-version = "0.1.0"
+version = "0.2.0"
 entrypoint = "src/lib.typ"
 authors = ["Gabriel Dos Santos <gabriel.dossantos@cea.fr"]
 license = "CeCILL-C"
@@ -13,4 +13,4 @@ exclude = ["*.pdf"]
 
 [template]
 path = "template"
-entrypoint = "template.typ"
+entrypoint = "main.typ"
