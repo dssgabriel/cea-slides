@@ -25,7 +25,7 @@
 
 #let header = config-page(
   header: self => {
-    set text(weight: "bold", fill: self.colors.primary, size: 32pt)
+    set text(weight: "bold", fill: self.colors.primary, size: 28pt)
     let title = if self.store.title != none {
       utils.call-or-display(self, self.store.title)
     } else {
@@ -211,7 +211,7 @@
 
   self = utils.merge-dicts(self, footer, header, config)
 
-  set text(fill: self.colors.text, size: 16pt)
+  set text(fill: self.colors.text, size: 14pt)
   touying-slide(self: self, ..bodies)
 })
 
@@ -250,14 +250,14 @@
 
   show math.equation: set text(font: math-font)
 
-  show raw.where(block: false): set text(font: code-font, size: 14pt)
+  show raw.where(block: false): set text(font: code-font, size: 12pt)
   show raw.where(block: false): box.with(
     fill: luma(240),
     inset: (x: 3pt, y: 0pt),
     outset: (y: 3pt),
     radius: 2pt,
   )
-  show raw.where(block: true): set text(font: code-font, size: 14pt)
+  show raw.where(block: true): set text(font: code-font, size: 12pt)
   show raw.where(block: true): block.with(
     fill: luma(240),
     inset: 10pt,
