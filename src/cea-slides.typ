@@ -219,6 +219,7 @@
 
 #let cea-theme(
   aspect-ratio: "16-9",
+  lang: "en",
   text-font: "Poppins",
   math-font: "Libertinus Math",
   code-font: "Geist Mono",
@@ -267,7 +268,7 @@
   )
 
   set heading(numbering: "1.")
-  set text(lang: "en", font: text-font)
+  set text(lang: lang, font: text-font)
   set list(marker: x => {
     let markers = (text(fill: color-palette.primary, sym.square.filled), sym.square.filled)
     markers.at(calc.min(x, markers.len() - 1))
